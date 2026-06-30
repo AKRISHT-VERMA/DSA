@@ -50,7 +50,7 @@ O(n)
 
 Mistakes I Made
 
-❌ Initially searched the list using
+ Initially searched the list using
 
 target-current in arr
 
@@ -58,7 +58,7 @@ This made searching O(n).
 
 ----------------------------------------------------
 
-❌ Used arr.index()
+ Used arr.index()
 
 Forgot that i already stores
 the index.
