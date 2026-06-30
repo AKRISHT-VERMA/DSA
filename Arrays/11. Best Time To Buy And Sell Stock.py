@@ -1,3 +1,20 @@
+'''Mistake I Almost Made
+
+I thought updating the minimum price later
+meant the algorithm was changing the
+buying day of the final answer.
+
+Reality:
+
+minimum_price is only used to compute
+future profits.
+
+maximum_profit already stores the best
+transaction found earlier.
+
+Updating minimum never erases a better
+profit already discovered.'''
+
 prices = [3, 8, 2, 5]
 minimum_price =  prices[0]
 maximum_profit = 0
