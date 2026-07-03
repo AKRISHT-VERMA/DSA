@@ -22,6 +22,6 @@ for i in prices:
     if i < minimum_price :
         minimum_price = i
     if i - minimum_price > maximum_profit :
-        maximum = i - minimum_price    
+        maximum_profit = i - minimum_price    
 print("Maximum Profit :", maximum_profit )
 print("Minimum :", minimum_price)

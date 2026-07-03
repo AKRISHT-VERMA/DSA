@@ -10,7 +10,7 @@ for missin_no in range(len(arr)+1):
         print("The Missing Number is :", missin_no)
         break      
 
-'''Method - 2''' 
+'''Method - 2 -- Mathematical Approach''' 
 arr = [9,6,4,2,3,5,7,0,1]
 n = len(arr)
 missing_no = ((n*(n+1))//2) - sum(arr)
