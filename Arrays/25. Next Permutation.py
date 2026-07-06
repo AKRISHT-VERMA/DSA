@@ -1,4 +1,4 @@
-arr = [1, 3, 2]
+arr = [1, 2, 3]
 
 # Step 1: Find the pivot
 pivot = -1
@@ -29,3 +29,45 @@ else:
         right -= 1
 
 print(arr)
+
+
+'''
+Problem : Next Permutation
+
+Key Idea
+
+We have to find the smallest permutation
+that is just greater than the current one.
+
+Step 1
+Traverse from right to left.
+
+Find the first element where
+
+arr[i] < arr[i+1]
+
+This is the first position from the right
+where the current permutation can be increased.
+
+Step 2
+
+Find the smallest element greater than
+arr[i] on its right side.
+
+Swap both elements.
+
+Step 3
+
+Reverse everything after that position.
+
+Reason:
+
+The right side is always in descending order.
+
+Reversing it makes it ascending,
+which gives the smallest possible permutation.
+
+Time Complexity : O(n)
+
+Space Complexity : O(1)
+'''
