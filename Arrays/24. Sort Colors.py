@@ -30,4 +30,23 @@ for i in arr:
 resultant_arr = [0] * count_0 + [1] * count_1 + [2] * count_2
 print(resultant_arr)        
 
-
+'''Method - 3 Dutch National Flag algorithm'''
+arr = [2, 0, 2, 1, 1, 0]
+low = 0
+mid = 0
+high = len(arr)-1
+while mid <= high:
+    if arr[mid] == 0 :
+        temp = arr[mid]
+        arr[mid] = arr[low] 
+        arr[low] = temp
+        low += 1
+        mid += 1
+    elif arr[mid] == 1:
+        mid += 1
+    else:
+        temp = arr[mid]
+        arr[mid] = arr[high]
+        arr[high] = temp
+        high -= 1
+print(arr)        
