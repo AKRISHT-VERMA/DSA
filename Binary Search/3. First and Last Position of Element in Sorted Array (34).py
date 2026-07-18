@@ -40,6 +40,23 @@ class Solution:
         last = self.lastOccurrence(nums, target)
 
         return [first, last]
+    
         
+if __name__ == "__main__":
+    sol = Solution()
+
+    print(sol.searchRange([5,7,7,8,8,10], 8)) 
+    print(sol.searchRange([5,7,7,8,8,10], 6))   
+    print(sol.searchRange([], 1))               
+    print(sol.searchRange([1], 1))            
+    print(sol.searchRange([1], 2))              
+    print(sol.searchRange([2,2], 2))          
+    print(sol.searchRange([2,2,2,2,2], 2))    
+    print(sol.searchRange([1,2,3,4,5], 1))    
+    print(sol.searchRange([1,2,3,4,5], 5))    
+    print(sol.searchRange([1,2,2,2,3,4], 2))  
+    print(sol.searchRange([1,1,2,3,4], 1))    
+    print(sol.searchRange([1,2,3,4,5,5], 5))  
+    print(sol.searchRange([8,8,8,8,8,8,8], 8))        
 
 
